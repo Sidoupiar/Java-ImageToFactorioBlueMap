@@ -24,7 +24,7 @@ public final class 根据图片生成彩色蓝图
 		
 		
 		// 基础参数
-		String head = "{\"blueprint\":{\"icons\":[{\"signal\":{\"type\":\"item\",\"name\":\"sicw-item-像素块母版\"},\"index\":1}],\"entities\":[";
+		String head = "{\"blueprint\":{\"icons\":[{\"signal\":{\"type\":\"item\",\"name\":\"SI多彩-物品-像素块母版\"},\"index\":1}],\"entities\":[";
 		String foot = "],\"item\":\"blueprint\",\"version\":"+System.currentTimeMillis()+"}}";
 		
 		// 创建文件流
@@ -47,7 +47,7 @@ public final class 根据图片生成彩色蓝图
 				r = ( int ) Math.floor( (double)color.getRed()/32D+0.5D ) * 32;
 				g = ( int ) Math.floor( (double)color.getGreen()/32D+0.5D ) * 32;
 				b = ( int ) Math.floor( (double)color.getBlue()/32D+0.5D ) * 32;
-				source.append( "{\"entity_number\":"+count+",\"name\":\"sicw-simple-像素块-"+r+"-"+g+"-"+b+"\",\"position\":{\"x\":"+((double)x-lx)+",\"y\":"+((double)y-ly)+"},\"variation\":1}" );
+				source.append( "{\"entity_number\":"+count+",\"name\":\"SI多彩-实体-像素块-"+r+"-"+g+"-"+b+"\",\"position\":{\"x\":"+((double)x-lx)+",\"y\":"+((double)y-ly)+"},\"variation\":1}" );
 				if( x < c-1 || y < d-1 ) source.append( "," );
 			}
 		}
